@@ -7,7 +7,7 @@ Needed DLLs for 64 bit environment are
 '''
 import ctypes 
 
-ic = ctypes.cdll.LoadLibrary("./tisgrabber_x64.dll")
+ic = ctypes.cdll.LoadLibrary("Python\\tisgrabber\\samples\\tisgrabber_x64.dll")
 
 class HGRABBER(ctypes.Structure):
     '''

@@ -8,14 +8,14 @@ Needed DLLs for 64 bit environment are
 import ctypes
 import tisgrabber as tis
 
-ic = ctypes.cdll.LoadLibrary("./tisgrabber_x64.dll")
+ic = ctypes.cdll.LoadLibrary("Python\\tisgrabber\\samples\\tisgrabber_x64.dll")
 tis.declareFunctions(ic)
 
 ic.IC_InitLibrary(0)
 
 hGrabber = ic.IC_CreateGrabber()
 
-ic.IC_OpenVideoCaptureDevice(hGrabber, tis.T("DFK Z30GP031"))
+ic.IC_OpenVideoCaptureDevice(hGrabber, tis.T("DFK 31BF03"))
 
 if(ic.IC_IsDevValid(hGrabber)):
     ic.IC_SetVideoFormat(hGrabber, tis.T("RGB32 (640x480)"))

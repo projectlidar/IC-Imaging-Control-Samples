@@ -9,7 +9,7 @@ Needed DLLs for 64 bit environment are
 import ctypes
 import tisgrabber as tis
 
-ic = ctypes.cdll.LoadLibrary("./tisgrabber_x64.dll")
+ic = ctypes.cdll.LoadLibrary("Python\\tisgrabber\\samples\\tisgrabber_x64.dll")
 tis.declareFunctions(ic)
 
 ic.IC_InitLibrary(0)
